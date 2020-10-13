@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Climbing Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styleform.css">
+  </head>
+<body id="body">
+  <div class="container">
+    <header class="header">
+        <h1 id="title" class="text-center">Climbing Survey Form</h1>
+        <p id="description" class="description text-center">
+          Give us some information to start your climbing Journey!
+        </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="Name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Type your name"
+          required
+         />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Type your email"
+          required
+         />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="age">Age</label>
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="8"
+          max="99"
+          class="form-control"
+          placeholder="Age"
+          required
+         />
+      </div>
+      <div class="form-group">
+      <p>What is your level of experience in climbing?</p>
+      <select id="dropdown" name="experience" class="form-control" required>
+        <option disabled selected value>Select experience level</option>
+        <option value="novice">First time Climbing</option>
+        <option value="beginner">Beginner, less than 6 months</option>
+        <option value="amateur">Amateur Climber, between 6 months and 3 years</option>
+        <option value="experienced">Experienced Climber, more than 3 years</option>
+        <option value="professional">Professional Climber</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>How did you got introduced to climbing?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="media"
+          type="radio"
+          class="input-radio"
+          checked
+        />Radio, Tv or Internet</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="friend"
+          type="radio"
+          class="input-radio"
+        />Friends</label
+      >
+      <label
+        ><input
+          name="user-recommend"
+          value="try-new"
+          type="radio"
+          class="input-radio"
+        />By myself, I wanted to try a new sport</label
+      >
+    </div>
+    <div class="form-group">
+      <p>
+        What would you like to achieve with Climbing?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+      <label>
+        <input
+          name="prefer"
+          value="lose-weight"
+          type="checkbox"
+          class="input-checkbox"
+        />Lose weight</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="strength"
+          type="checkbox"
+          class="input-checkbox"
+        />Get Stronger</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="flexibility"
+          type="checkbox"
+          class="input-checkbox"
+        />Improve my flexibility</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="technique"
+          type="checkbox"
+          class="input-checkbox"
+        />Improve/develop my technique</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="confident"
+          type="checkbox"
+          class="input-checkbox"
+        />Get more confident when clipping</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="lead"
+          type="checkbox"
+          class="input-checkbox"
+        />Learn/Improve my Lead Climbing skills</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="grades"
+          type="checkbox"
+          class="input-checkbox"
+        />Improve my boulder grades</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="belay"
+          type="checkbox"
+          class="input-checkbox"
+        />Learn to belay</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="other"
+          type="checkbox"
+          class="input-checkbox"
+        />Others</label
+      >
+      <div class="form-group">
+      <p>Any petitions, suggestions or previous injuries?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+      </div>
+      <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+    </form>
+  </div>
+</body>
+</html>
